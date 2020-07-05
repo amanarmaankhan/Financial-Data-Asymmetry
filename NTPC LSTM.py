@@ -67,7 +67,7 @@ regressor.add(Dense(units = 1))
 
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
-regressor.fit(X_train, y_train, epochs = 1, batch_size = 32)
+regressor.fit(X_train, y_train, epochs = 1000, batch_size = 32)
 
 
 # In[10]:
@@ -145,14 +145,6 @@ predicted_stock_price1 = sc.inverse_transform(predicted_stock_price1)
 
 print(predicted_stock_price1)
 
-
-# In[50]:
-
-
-print('hello world')
-
-
-# In[ ]:
 
 
 
